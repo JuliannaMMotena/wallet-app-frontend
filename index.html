@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wallet App</title>
+    <title>Wallet App - Login</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="index.js"></script>
   </head>
@@ -15,16 +15,20 @@
             Digite seu e-mail abaixo para ter acesso a aplicação financeira
             Wallet e ter um melhor controle dos seus gastos mensais.
           </p>
-          <label class="mt" for="input-email">E-mail</label>
+          <label class="mt" for="input-email">E-mail:</label>
           <input
             placeholder="email@exemplo.com"
             class="mt smaller"
             id="input-email"
-            id="input-email"
+            name="input-email"
             type="email"
           />
-          <button class="full-width mt large">Acessar</button>
-          <a class="mt larger">Não tem conta? Faça seu cadastro aqui.</a>
+          <button onclick="onClickLogin()" class="full-width mt large">
+            Acessar
+          </button>
+          <a href="src/pages/register/index.html" class="mt larger"
+            >Não tem conta? Faça seu cadastro aqui.</a
+          >
         </div>
       </div>
     </div>
